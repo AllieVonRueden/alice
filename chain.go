@@ -112,3 +112,4 @@ func (c Chain) Append(constructors ...Constructor) Chain {
 func (c Chain) Extend(chain Chain) Chain {
 	return c.Append(chain.constructors...)
 }
+ 
