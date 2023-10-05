@@ -1,4 +1,4 @@
-// Package alice provides a convenient way to chain http handlers.
+//#Package alice provides a convenient way to chain http handlers.
 package alice
 
 import "net/http"
@@ -112,4 +112,4 @@ func (c Chain) Append(constructors ...Constructor) Chain {
 func (c Chain) Extend(chain Chain) Chain {
 	return c.Append(chain.constructors...)
 }
- 
+  
